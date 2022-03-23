@@ -13,11 +13,11 @@
 
 ## INTRODUCTION
 ### 자동 텍스트 요약 방식
-1. **추출적 요약 Extractive Text Summarization**
+**1. 추출적 요약 Extractive Text Summarization**
 - emulates human summarization in that it uses a vocabulary beyond the specified text
 - difficult to automatically produce
 - 새로운 단어를 사용하거나 다시 표현하는 것
-2. **추상적 요약 Abstractive Text Summarization**
+**2. 추상적 요약 Abstractive Text Summarization**
 - utilizes the raw structures, sentences or phases of the text
 - outputs a summarization, leveraging only the content from the source material
 - 특정 메트릭을 기반으로 문서에서 문장의 순위를 지정하고 점수를 매긴 다음 입력 문서 의 대표적인 요약으로 상위 k 문장을 선택하는 작업 
@@ -39,10 +39,10 @@ NLP에서 성능이 높은 BERT 구조 선정
 - 마지막 단계로 사용자가 K-Means 클러스터링의 K 값 입력 가능
 
 ### WEAKNESSES
-**INITIAL WEAKNESSES**
+**INITIAL WEAKNESSES**  
 큰 강의의 요약, 컨텍스트 워드의 처리의 어려움, 대화 언어의 처리와 같은 다른 방법론들이 가지고 있는 것과 동일  
 
-**MODEL WEAKNESSES**
+**MODEL WEAKNESSES**  
 100개 이상의 문장이 들어오는 경우 대표성을 갖는 문장의 비율이 적다  
 → 가장 가까운 클러스터에 여러 문장을 포함하는 방법은 어떨까?  
 ⇢ 중심부가 수렴된 위치에 따라 대표성이 떨어질 가능성 O  
